@@ -135,8 +135,19 @@
     <div class="col-md-6" style="padding: 0; height: 280px; margin-top: 50px;">
 
 
- <h3 class='text1 deep-yellow'>Lorem Ipsum</h3>
-    <span class='text1 deep-yellow'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non erat aliquet mauris hendrerit iaculis. Nulla volutpat vulputate interdum. Praesent turpis ante, sollicitudin nec felis vitae, vulputate ultrices r non erat aliquet mauris hendrerit iaculis. Nulla volutpat vulputate interdum. Praesent turpis ante, sollicitudin nec felis vitae, vulputate ultrices nulla. Integer sollicitudin vel ex nec pretium. Morbi fermentum metus id orci faucibus, eget elementum felis molestie.m dolor sit amet, consectetur adipiscing elit. Integer non erat aliquet mauris hendrerit iaculis. Nulla volutpat vulputate interdum. Praesent turpis ante, sollicitudin nec felis vitae, vulpu</span>
+ <h3 class='text1 deep-yellow'>Contribute</h3>
+    <span class='text1 deep-yellow'>
+                     So you want to contribute to our vision? May be its your vision too. Join the ride. 
+                     <br>
+                      There are many ways to contribute.<br>
+                      -You can write and improve documentation.
+                      -You can improve and add your contents to our learning resources.
+                      -You can make your own large project with TheDevByte members and get it featured in our Hall of Fame
+                      -Want to take a lead? DM @ditt0 in the community
+                      
+                                                                              
+                                                                              
+    </span>
     <br><br><button class="text1 custom-btn" style="color:#02db02; border:1px solid #02db02; background-color: #000; "><a href="https://github.com/TheDevByte/Resources"> Resources</a></button>
     <button class="text1 custom-btn" style="color:#02db02; border:1px solid #02db02; background-color: #000; margin-left:10px;"><a href="https://www.youtube.com/channel/UCMHZME16DphOdrsTPFAGoRQ"> Youtube Channel</a></button>
     <br>
@@ -200,92 +211,6 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
       </div>
     </footer>
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-
-  function setupTypewriter(t) {
-        var HTML = t.innerHTML;
-
-        t.innerHTML = "";
-
-        var cursorPosition = 0,
-            tag = "",
-            writingTag = false,
-            tagOpen = false,
-            typeSpeed = 100,
-            tempTypeSpeed = 0;
-
-        var type = function() {
-
-            if (writingTag === true) {
-                tag += HTML[cursorPosition];
-            }
-
-            if (HTML[cursorPosition] === "<") {
-                tempTypeSpeed = 0;
-                if (tagOpen) {
-                    tagOpen = false;
-                    writingTag = true;
-                } else {
-                    tag = "";
-                    tagOpen = true;
-                    writingTag = true;
-                    tag += HTML[cursorPosition];
-                }
-            }
-            if (!writingTag && tagOpen) {
-                tag.innerHTML += HTML[cursorPosition];
-            }
-            if (!writingTag && !tagOpen) {
-                if (HTML[cursorPosition] === " ") {
-                    tempTypeSpeed = 0;
-                }
-                else {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                }
-                t.innerHTML += HTML[cursorPosition];
-            }
-            if (writingTag === true && HTML[cursorPosition] === ">") {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-                writingTag = false;
-                if (tagOpen) {
-                    var newSpan = document.createElement("span");
-                    t.appendChild(newSpan);
-                    newSpan.innerHTML = tag;
-                    tag = newSpan.firstChild;
-                }
-            }
-
-            cursorPosition += 1;
-            if (cursorPosition < HTML.length - 1) {
-                setTimeout(type, tempTypeSpeed);
-            }
-
-        };
-
-        return {
-            type: type
-        };
-    }
-
-    var typer = document.getElementById('typewriter');
-
-    typewriter = setupTypewriter(typewriter);
-
-    typewriter.type();
-
-
-
-
-
-</script>
 
 
 
